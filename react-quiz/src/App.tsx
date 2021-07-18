@@ -1,11 +1,15 @@
 import React, {useState} from 'react';
 import './App.css';
+import FeatureCard from './components/featureCard';
+import LandingPage from './components/LandingPage';
 import Navbar from "./components/Navbar"
 
 function App() {
 return(
   <div className="App">
     <Navbar />
+    <LandingPage />
+    <FeatureCard />
   </div>
 )}
 
