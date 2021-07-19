@@ -12,12 +12,11 @@ const FeatureCard = () => {
                   <div
                     className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400"
                   >
-                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
                   </div>
-                  <h6 className="text-xl font-semibold">Awarded Agency</h6>
+                  <i className="fa fa-play" style={{position: "relative", bottom: "37px", right: "30px", color: "white"}} aria-hidden="true"></i>
+                  <h6 className="text-xl font-semibold">SKILLSSIO</h6>
                   <p className="mt-2 mb-4 text-gray-600">
-                    Divide details about your product or agency work into parts.
-                    A paragraph describing a feature will be enough.
+                   Offers you to learn the skills from top industry leaders free of distractions and ads. The private Youtube you always wanted. 
                   </p>
                 </div>
               </div>
@@ -31,10 +30,10 @@ const FeatureCard = () => {
                     className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400"
                   >
                   </div>
-                  <h6 className="text-xl font-semibold">Free Revisions</h6>
+                  <i className="fa fa-book" style={{position: "relative", bottom: "37px", right: "30px", color: "white"}}  aria-hidden="true"></i>
+                  <h6 className="text-xl font-semibold">SkillsKart</h6>
                   <p className="mt-2 mb-4 text-gray-600">
-                    Keep you user engaged by providing meaningful information.
-                    Remember that by this time, the user is curious.
+                  Once you learn to read, you will be forever free. Yes, and finding right books made easier with SKILLSKART. Visit now and get books recommended by top professionals. 
                   </p>
                 </div>
               </div>
@@ -48,10 +47,10 @@ const FeatureCard = () => {
                     className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400"
                   >
                   </div>
-                  <h6 className="text-xl font-semibold">Verified Company</h6>
+                  <i className="fa fa-question" style={{position: "relative", bottom: "37px", right: "30px", color: "white"}}></i>
+                  <h6 className="text-xl font-semibold">SQUILLIZ: QUIZ</h6>
                   <p className="mt-2 mb-4 text-gray-600">
-                    Write a few lines about each one. A paragraph describing a
-                    feature will be enough. Keep you user engaged!
+                    It's Quiz time.. Yes, Are you ready to test your skills? And see your performance growth to improve & upskill.
                   </p>
                 </div>
               </div>

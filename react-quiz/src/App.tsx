@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import FeatureCard from './components/featureCard';
+import FeatureCard from "./components/FeatureCard"
 import LandingPage from './components/LandingPage';
 import Navbar from "./components/Navbar"
 
