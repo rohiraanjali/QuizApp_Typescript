@@ -84,38 +84,50 @@ const FeatureCard = () => {
                 ></a
               >
             </div>
-            <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-              <div
-                className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600"
-              >
-                <img
-                  alt="..."
-                  src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80"
-                  className="w-full align-middle rounded-t-lg"
-                />
-                <blockquote className="relative p-8 mb-4">
-                  <svg
-                    preserveAspectRatio="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 583 95"
-                    className="absolute left-0 w-full block"
-                    style={{height: "95px",top: "-94px"}}
-                  >
-                    <polygon
-                      points="-30,95 583,95 583,65"
-                      className="text-pink-600 fill-current"
-                    ></polygon>
-                  </svg>
-                  <h4 className="text-xl font-bold text-white">
-                    Top Notch Services
-                  </h4>
-                  <p className="text-md font-light mt-2 text-white">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
-                  </p>
-                </blockquote>
+            <div className="flex space-x-4 justify-center w-full md:w-4/12 px-4 mr-auto ml-auto ">
+              <div>
+              <div className="p-4 pr-6 bg-white border-1-8 border-transparent rounded-md shadow-md space-y-2">
+                <img className="w-10 h-10 mx-auto" src="https://image.flaticon.com/icons/png/512/1336/1336494.png" />
+                <h2 className="text-lg font-semibold leading-6 text-center">Web Development</h2>
+                <p className="text-gray-600 text-center">Quiz on HTML, CSS, JavasScript</p>
               </div>
+              <br />
+
+              <div className="p-4 pr-6 bg-white border-1-8 border-transparent rounded-md shadow-md space-y-2">
+                <img className="w-10 h-10 mx-auto" src="https://image.flaticon.com/icons/png/512/1688/1688519.png" />
+                <h2 className="text-lg font-semibold leading-6 text-center">UX Design</h2>
+                <p className="text-gray-600 text-center">Quiz on design fundamentals, research</p>
+              </div>
+              <br />
+
+              <div className="p-4 pr-6 bg-white border-1-8 border-transparent rounded-md shadow-md space-y-2">
+                <img className="w-10 h-10 mx-auto" src="https://img-premium.flaticon.com/png/512/791/premium/791858.png?token=exp=1626787659~hmac=636b74bc3cd82458d033ab2f7537ec01" />
+                <h2 className="text-lg font-semibold leading-6 text-center">Marketing</h2>
+                <p className="text-gray-600 text-center">Quiz on strategies and basics</p>
+              </div>
+              </div>
+            <div>
+            <div className="p-4 pr-6 bg-white border-1-8 border-transparent rounded-md shadow-md space-y-2">
+                <img className="w-10 h-10 mx-auto" src="https://img-premium.flaticon.com/png/512/3079/premium/3079941.png?token=exp=1626787758~hmac=61f13df942bf8ac242dbea5fdcce35c6" />
+                <h2 className="text-lg font-semibold leading-6 text-center">Content Writing</h2>
+                <p className="text-gray-600 text-center">Quiz on Grammar, proficiency in writing</p>
+              </div>
+              <br />
+
+              <div className="p-4 pr-6 bg-white border-1-8 border-transparent rounded-md shadow-md space-y-2">
+                <img className="w-10 h-10 mx-auto" src="https://image.flaticon.com/icons/png/512/3028/3028661.png" />
+                <h2 className="text-lg font-semibold leading-6 text-center">Finance</h2>
+                <p className="text-gray-600 text-center">Quiz for basics of stock market, quity etc</p>
+              </div>
+              <br />
+
+              <div className="p-4 pr-6 bg-white border-1-8 border-transparent rounded-md shadow-md space-y-2">
+                <img className="w-10 h-10 mx-auto" src="https://img-premium.flaticon.com/png/512/440/premium/440903.png?token=exp=1626788020~hmac=21500b20db56c857f326f3804190026c" />
+                <h2 className="text-lg font-semibold leading-6 text-center">Video Editing</h2>
+                <p className="text-gray-600 text-center">Quiz for premier pro, AE, GEO Layers etc </p>
+              </div>
+              
+             </div>
             </div>
           </div>
         </div>
