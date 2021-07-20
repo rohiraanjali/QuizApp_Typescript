@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import FeatureCard from "./components/FeatureCard"
+import Footer from './components/Footer';
 import LandingPage from './components/LandingPage';
 import Navbar from "./components/Navbar"
 
@@ -10,6 +11,7 @@ return(
     <Navbar />
     <LandingPage />
     <FeatureCard />
+    <Footer />
   </div>
 )}
 

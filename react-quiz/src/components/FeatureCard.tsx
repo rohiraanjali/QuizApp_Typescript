@@ -61,28 +61,27 @@ const FeatureCard = () => {
               <div
                 className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100"
               >
+                
               </div>
+              <i className="fa fa-question fa-2x" style={{position: "relative", bottom: "44px", right: "45px", color: "black"}}></i>
+
               <h3 className="text-3xl mb-2 font-semibold leading-normal">
-                Working with us is a pleasure
+                Ready to challenge yourself ?
               </h3>
               <p
                 className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700"
               >
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
+                Learning skills is never enough. You should be confident enough to take tests based on your skills to check upon your knowledge and capabilities on frequent basis.
               </p>
               <p
                 className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
               >
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                The SQUILLIZ comes with wide categories of skills to choose from. Select your preferred skill and get steady go for quick quiz! GOOD LUCK👍.
               </p>
               <a
                 href="https://www.creative-tim.com/learning-lab/tailwind-starter-kit#/presentation"
                 className="font-bold text-gray-800 mt-8"
-                >Check Tailwind Starter Kit!</a
+                ></a
               >
             </div>
             <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
