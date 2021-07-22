@@ -4,7 +4,7 @@ const mongoose = require("mongoose")
 // TODO: use async await instead of then/catch
 function initializeDBConnection() {
   // Connecting to DB
-  mongoose.connect("mongodb+srv://Anjali_Rohira:anjali@rect-quiz-db.cazgp.mongodb.net/test", {
+  mongoose.connect("mongodb+srv://Anjali_R:anjali@neog-mongosession.dyxsl.mongodb.net/quiz", {
     useCreateIndex: true,useUnifiedTopology: true, useNewUrlParser: true
   }) 
     .then(() => console.log("DB successfully connected"))

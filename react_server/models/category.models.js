@@ -40,7 +40,7 @@ const CategorySchema = new mongoose.Schema({
         trim: true
     },
     questions: [QuestionSchema],
-    scoreBoard: [scoreBoardSchema]
+    scoreBoard: [ScoreBoardSchema]
 },{timestamps:true})
 
 module.exports = mongoose.model("Category", CategorySchema)

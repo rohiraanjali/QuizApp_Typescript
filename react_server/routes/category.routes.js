@@ -4,6 +4,6 @@ const {getQuestions, updateScoreBoard} = require("../controllers/Category.contro
 
 router.route("/questions").get(getQuestions)
 
-router.route("/scoreboard/:quizId").post(updateScoreBoard)
+router.route("/scoreboard/:quizID").post(updateScoreBoard)
 
 module.exports = router;

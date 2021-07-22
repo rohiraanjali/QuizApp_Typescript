@@ -1,9 +1,10 @@
 import React, {useState} from 'react';
 import './App.css';
-import FeatureCard from "./components/FeatureCard"
-import Footer from './components/Footer';
-import LandingPage from './components/LandingPage';
-import Navbar from "./components/Navbar"
+import FeatureCard from "./Home/FeatureCard"
+import Footer from './Home/Footer';
+import LandingPage from './Home/LandingPage';
+import Navbar from "./Home/Navbar";
+import UserForm from "./Home/Form"
 
 function App() {
 return(
@@ -12,6 +13,7 @@ return(
     <LandingPage />
     <FeatureCard />
     <Footer />
+    <UserForm />
   </div>
 )}
 

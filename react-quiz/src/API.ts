@@ -1,4 +1,4 @@
-import QuestionCard from "./components/QuestionCard";
+import QuestionCard from "./Home/QuestionCard";
 import {shuffleArray} from "./utils";
 
 export type Question = {

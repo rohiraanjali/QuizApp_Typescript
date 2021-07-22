@@ -1,17 +1,16 @@
 const Categories = require("../models/category.models");
 
-const getQuestions = async(req, res) => {
+const getQuestions = async(req,res) => {
     try {
         const questions = await Categories.find({}).lean();
-        if(questions) {
-            return res.status(200).json({quiz:questions})
+        if(questions){
+           return res.status(200).json({quiz:questions})
         }
-        res.status(404).json({success: false, message:"Questions not found"})
+        res.status(404).json({ success:false,message:"Quiz not found"})
     } catch (error) {
-        res.status(404).json({success: false, message:"Questions not found"})
-    }
+        res.status(404).json({ success:false,message:"Quiz not found"})
+    } 
 }
-
 
 const updateScoreBoard = async(req,res) => {
     try {
@@ -20,7 +19,7 @@ const updateScoreBoard = async(req,res) => {
 
         await quiz.save((err, quiz) => {
             if(err) {
-                return res.status(404).json({status: 404, message: "Not able to update the scoreBoard. Please refresh the page!"})
+                return res.status(404).json({status: 404, message: "Not able to load the scoreBoard. Please refresh the page!"})
             }
             if(quiz) {
                 return res.status(201).json({scoreBoard:quiz.scoreBoard})
