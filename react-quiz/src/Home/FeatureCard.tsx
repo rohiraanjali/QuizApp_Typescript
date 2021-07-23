@@ -1,4 +1,17 @@
+import { useQuiz } from "../context/quizContext";
+import {useState} from "react"
+import {State} from "./Home.types"
+
 const FeatureCard = () => {
+
+  const {quiz} = useQuiz();
+  const [state,setState] = useState<State>({name:"",category:"default"});
+
+  const handleChange = (event: React.ChangeEvent<HTMLInputElement>|React.ChangeEvent<HTMLSelectElement>): void => {
+    const {name,value} = event.target;
+    setState( state => ({...state,[name]:value}));
+}
+
  return (
 <>
 <section className="pb-20 bg-gray-300 -mt-24">
@@ -86,17 +99,17 @@ const FeatureCard = () => {
             </div>
             {/* categories */}
 
-            <div className="flex space-x-4 justify-center w-full md:w-4/12 px-4 mr-auto ml-auto ">
-              <div>
-                
-              <div className="p-4 pr-6 bg-white border-1-8 border-transparent rounded-md shadow-md space-y-2">
-                <img className="w-10 h-10 mx-auto" src="https://image.flaticon.com/icons/png/512/1336/1336494.png" />
-                <h2 className="text-lg font-semibold leading-6 text-center">Web Development</h2>
-                <p className="text-gray-600 text-center">Quiz on HTML, CSS, JavasScript</p>
-              </div>
-
-              </div>
-              </div>
+            <div>
+                <select className="form__control" name="category" defaultValue={state.category} onChange={handleChange}>
+                     <option value="default">Select Category</option>
+                    {    
+                        quiz?.map( (quiz) => (
+                            <option value={quiz._id} key={quiz._id}>{quiz.name}</option>
+                        ))
+                    }
+                </select>
+                {/* {error.category && <small className="invalid__feedback">{error.category}</small>} */}
+            </div>
 
           </div>
         </div>
