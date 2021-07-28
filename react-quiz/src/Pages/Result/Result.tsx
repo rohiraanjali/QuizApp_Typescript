@@ -42,7 +42,6 @@ navigate(-1)
         <h3 className="text-1.5xl text-center font-bold text-gray-400">YOUR SCORE</h3>
         <div className="text-3xl text-center font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-600">{score||0} / 5</div>
         <br />
-       
         <div>{score === 0 ? (
         <button style={{width: "100%"}} className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border rounded" onClick={handleReset}>TRY ONCE AGAIN</button>
       ) : (
