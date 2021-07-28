@@ -33,7 +33,7 @@ const Navbar = () => {
               <li className="nav-item">
               <a
                 className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                href="#pablo"
+                
                 >
                 <Link to="/">
                 <span className="ml-2">Home</span>
@@ -43,7 +43,7 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
+                 
                 >
                  <Link to="/form">
                  <span className="ml-2">Quiz</span>
@@ -54,7 +54,6 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                  href="#pablo"
                 >
                  <Link to="/results">
                  <span className="ml-2">Results</span>

@@ -47,7 +47,7 @@ const handleForm = () => {
 </form>
 
 </div>
-<SuccessToast show={toast} message={"something went wrong"} />
+<SuccessToast show={toast} message={"Welcome to the game. Click OK"} />
       </>
     )
 }
