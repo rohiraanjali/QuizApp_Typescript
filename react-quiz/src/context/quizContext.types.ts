@@ -1,23 +1,15 @@
 import React, {Dispatch} from "react";
 
 export type Option = {
-    _id: string;
     text: string;
     isRight: boolean;
 }
 
-
 export type Question = {
-    _id: string;
-    text: string;
+    question: string;
     options: Option[];
 }
 
-export type ScoreBoard = {
-    _id: string;
-    name: string;
-    score: number;
-}
 
 export type Props = {
     children?:React.ReactNode
@@ -26,8 +18,8 @@ export type Props = {
 export type Quiz = {
     _id: string;
     name: string;
+    description: string;
     questions:Question[];
-    scoreBoard: ScoreBoard[]
 }
 
 export type QuizData = {

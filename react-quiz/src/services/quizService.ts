@@ -4,7 +4,8 @@ import axios, { AxiosError } from "axios"
 
 export async function getQuestion():Promise<QuizData|ServerError>  {
 try {
-    const {data} = await axios.get<QuizData>(`http://localhost:5000/questions`)
+    const {data} = await axios.get<QuizData>(`https://quiztypescript-server.piratey055.repl.co/questions`)
+    console.log(data)
     return data;
 
 } catch (error) {
