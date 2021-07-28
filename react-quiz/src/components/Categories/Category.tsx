@@ -8,10 +8,9 @@ const Category = () => {
         <>
         <Navbar />
         <div className="flex justify-center items-center min-h-screen bg-gray-300">
-            
             <div className="flex-1 max-w-5xl p-16 z-0 opacity-6">
-            <h1 className="text-8xl font-extrabold text-opacity-40 text-gray-400">1/6</h1>
-            <h2 style={{position: "absolute", top: "27%"}} className=" md:text-5xl font-bold text-blue-500">Select Categories</h2>
+            <h1 className="hidden md:block text-8xl font-extrabold text-opacity-40 text-gray-400">1/6</h1>
+            <h2 style={{position: "absolute", top: "27%"}} className="hidden md:block md:text-5xl font-bold text-blue-500">Select Categories</h2>
             <p style={{position: "absolute", top: "38%"}} className=" md:text-2xl hidden md:block font-nomal text-gray-500">Select one of your skills to continue taking the test.</p>
             <br />
             <br />
