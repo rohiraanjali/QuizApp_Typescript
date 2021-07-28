@@ -90,7 +90,7 @@ export default function LandingPage() {
                   <div className="px-4 py-5 flex-auto">
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                     </div>
-                    <i className="fas fa-shopping-cart" style={{position: "relative", bottom: "37px", right: "33px", color: "white"}}  aria-hidden="true"></i>
+                    <i className="fa fa-shopping-cart" style={{position: "relative", bottom: "37px", right: "33px", color: "white"}}  aria-hidden="true"></i>
                   <h6 className="text-xl font-semibold">SkillsKart</h6>
                   <p className="mt-2 mb-4 text-gray-600">
                   Once you learn to read, you will be forever free. Yes, and finding right books made easier with SKILLSKART. Visit now and get books recommended by top professionals. 
