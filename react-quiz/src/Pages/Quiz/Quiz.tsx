@@ -100,8 +100,8 @@ const Quiz = () => {
         <Question key={nanoid()} question={currentQuiz?.questions[currentQuestionNo].question} />
         <Options currentQuiz={currentQuiz} currentQuestionNo={currentQuestionNo} isClicked={isClicked} handleOption={handleOption}/>
         <br />
-        <button className="bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" disabled={isClicked === false} onClick={handleNextQues}>NEXT</button>
-        <button className="float-right bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded" onClick={handleQuit}>Quit</button>
+        <button className="float-right bg-blue-500 hover:bg-blue-400 text-white font-bold py-1 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded" disabled={isClicked === false} onClick={handleNextQues}>NEXT</button>
+        <button className=" bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-1 px-4 border border-blue-500 hover:border-transparent rounded" onClick={handleQuit}>Quit</button>
             </div>
         <Spinner show={spinner} />
 
