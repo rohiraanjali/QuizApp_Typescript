@@ -1,13 +1,12 @@
 import {useQuiz} from "../../context/quizContext"
 import Question from "../../components/Questions/Question"
-import {useParams, useLocation, Navigate, useNavigate} from "react-router-dom";
-import {Location } from "./QuizTypes"
+import {useParams, useLocation, useNavigate} from "react-router-dom";
+import {Location } from "./Quiz.types"
 import { nanoid } from "nanoid";
 import Options from "../../components/Options/Options"
 import {useState, useEffect} from "react"
 import Navbar from "../../components/Navbar/Navbar";
 import Timer from "../../components/Timer/Timer";
-import { getJSDocReadonlyTag } from "typescript";
 import Spinner from "../../utils/Spinner/Spinner";
 
 const Quiz = () => {

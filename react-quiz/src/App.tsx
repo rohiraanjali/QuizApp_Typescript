@@ -48,13 +48,12 @@ return(
           <Route path="/quiz/:quizId" element={<Quiz />} />
           <Route path="/results" element={<Result />} />
           <Route path="*" element={<RouteNotFound />} />
-
         </Routes>
   </div>
-   <Spinner show={spinner}/>
-   <ErrorToast show={error} message={"something went wrong"} />
+  <Spinner show={spinner}/>
+  <ErrorToast show={error} message={"something went wrong"} />
 
-   </>
+  </>
 )}
 
 export default App;

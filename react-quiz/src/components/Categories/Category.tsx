@@ -19,19 +19,15 @@ const Category = () => {
                     {quiz.map(quiz => (
                     <Link to={`/quiz/${quiz._id}`}>
                     <div key={quiz._id} className="p-4 pr-6 bg-white border-1-8 border-transparent rounded-md shadow-md space-y-2">
-                   
                     <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
                     <i className="fa fa-question" ></i>
-                  </div>
+                    </div>
                     <h2 className="text-lg font-semibold leading-6">{quiz.name}</h2>
-
-                          <p className="text-gray-600">{quiz.description}</p>
-                      </div>
-                      </Link>
-                      
+                        <p className="text-gray-600">{quiz.description}</p>
+                    </div>
+                    </Link>
                         ))}
-                  </div> 
-              
+                </div> 
             </div>
         </div>
         </>

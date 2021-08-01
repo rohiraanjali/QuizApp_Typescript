@@ -1,6 +1,6 @@
 import Navbar from "../../components/Navbar/Navbar";
 import { useLocation} from "react-router-dom";
-import { Location } from "./ResultTypes";
+import { Location } from "./Result.types";
 import { useQuiz } from "../../context/quizContext";
 import wrong from "../../assets/wrong.png";
 import correct from "../../assets/correct.png"
@@ -25,9 +25,9 @@ navigate(-1)
         <div className="flex w-full h-auto justify-center items-center ">
         <div className="bg-white p-12 rounded-lg shadow-lg w-90 mt-8 h-auto ">
         <div>{score === 0 ? (
-            <img className="w-65 h-25 object-center align-center" src={wrong} />
+            <img className="w-65 h-25 object-center align-center" src={wrong} alt="lessScore" />
             ) : (
-                <img className="w-65 h-25 align-center" src={correct} />
+                <img className="w-65 h-25 align-center" src={correct} alt="moreScore" />
             )
     }</div>
 

@@ -1,6 +1,6 @@
 
 import "./Spinner.css";
-import { SpinnerProps } from "./SpinnerTypes";
+import { SpinnerProps } from "./Spinner.types.ts";
 
 function Spinner({show}:SpinnerProps) {
     return show ?(

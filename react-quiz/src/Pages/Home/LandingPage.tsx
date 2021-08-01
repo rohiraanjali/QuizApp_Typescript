@@ -1,21 +1,12 @@
-import { useNavigate } from "react-router";
-import {useState} from "react";
 import { useQuiz } from "../../context/quizContext";
 import { Link } from "react-router-dom";
-import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { react } from "@babel/types";
 import heroImg from "../../assets/heroImage.png"
-import Spinner from "../../utils/Spinner/Spinner";
 export default function LandingPage() {
 
   const {quiz} = useQuiz();
   console.log({quiz})
- const navigate = useNavigate()
-  const [form, setForm] = useState(false)
-
-
   return (
     <>
       <Navbar  />
@@ -79,7 +70,7 @@ export default function LandingPage() {
                     </div>
                     <h6 className="text-xl font-semibold">SKILLSSIO</h6>
                   <p className="mt-2 mb-4 text-gray-600">
-                   Offers you to learn the skills from top industry leaders free of distractions and ads. The private Youtube you always wanted. 
+                  Offers you to learn the skills from top industry leaders free of distractions and ads. The private Youtube you always wanted. 
                   </p>
                   </div>
                 </div>
@@ -133,22 +124,18 @@ export default function LandingPage() {
                 className="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700"
               >
                 The SQUILLIZ comes with wide categories of skills to choose from. Select your preferred skill and get steady go for quick quiz! GOOD LUCK👍.
-
               </p>
               <Link to ="/form">
                 <button style={{width: "100%"}} className="bg-blue-500 hover:bg-blue-700 h-10 text-white font-bold py-2 px-4 border rounded" >EXPLORE</button>
                 </Link>
-            </div>
-            <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-             
+              </div>
+              <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
                 <img src={heroImg} />
-               
-      
+              </div>
             </div>
           </div>
-        </div>
         </section>
-</main>
+      </main>
       
       <Footer />
     </>

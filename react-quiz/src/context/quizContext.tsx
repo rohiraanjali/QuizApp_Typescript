@@ -4,14 +4,12 @@ import { quizReducer } from "../reducer/quizReducer";
 
 export const QuizContext = createContext<ContextType>({quiz:[],score:0,currentQuestionNo:0});
 
-
 export const QuizContextProvider = ({children}:Props) => {
     const initialState:ContextState = {
         quiz:[],
         score:0,
         currentQuestionNo:0
     } 
-
 
     const [{quiz,score,currentQuestionNo}, dispatch] = useReducer(quizReducer, initialState)
     return (

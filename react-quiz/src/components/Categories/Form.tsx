@@ -1,27 +1,26 @@
 import {useState} from "react"
-import {State} from "../../Pages/Home/Home.types";
-import { useQuiz } from "../../context/quizContext";
+import {State} from "./categories.types";
 import {useNavigate} from "react-router-dom";
 import {Link} from "react-router-dom"
 import { SuccessToast } from "../../utils/Toast/Toast";
+
 const Form = () => {
   const navigate = useNavigate()
 
-  const {quiz} = useQuiz();
   const [state,setState] = useState<State>({name:"",category:"default", description:""});
+  const[toast,setToast] = useState(false)
+
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>|React.ChangeEvent<HTMLSelectElement>): void => {
       const {name,value} = event.target;
       setToast(true)
           setState( state => ({...state,[name]:value}));
   }
 
-  const[toast,setToast] = useState(false)
-
-const handleForm = () => {
+  const handleForm = () => {
   setToast(true)
-   navigate("/categories")
-   setToast(true)
-}
+  navigate("/categories")
+  setToast(true)
+  }
   
     return (
       <>

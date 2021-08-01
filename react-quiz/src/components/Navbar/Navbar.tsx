@@ -1,6 +1,6 @@
-import { react } from "@babel/types";
 import React from "react"
-import {Link} from "react-router-dom"
+import {Link} from "react-router-dom";
+
 const Navbar = () => {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
@@ -43,21 +43,19 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
-                 
                 >
-                 <Link to="/form">
-                 <span className="ml-2">Quiz</span>
-                 </Link>
-                 
+                <Link to="/form">
+                  <span className="ml-2">Quiz</span>
+                </Link>
                 </a>
               </li>
               <li className="nav-item">
                 <a
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug text-white hover:opacity-75"
                 >
-                 <Link to="/results">
-                 <span className="ml-2">Results</span>
-                 </Link>
+                <Link to="/results">
+                  <span className="ml-2">Results</span>
+                </Link>
                 </a>
               </li>
             </ul>

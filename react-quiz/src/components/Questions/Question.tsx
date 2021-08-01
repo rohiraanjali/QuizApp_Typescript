@@ -1,6 +1,4 @@
-export type QuestionProps = {
-    question?:string
-}
+import { QuestionProps } from "./question.types"
 
 const Question = ({question}:QuestionProps) => {
     return (
